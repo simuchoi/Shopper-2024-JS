@@ -1,9 +1,7 @@
       html {
-        display: flex;
         box-sizing: border-box;
         font-size: 16px;
         background-color: aliceblue;
-        justify-content: center;
       }
       
       *, *:before, *:after {
@@ -32,14 +30,15 @@ body {
   width: 1440px;
   height: 5000px;  
   transition: transform 1000ms;
+  margin: 0px auto;
 }
 
 .first-page {
   display: flex;
-  align-items: center;
   flex-direction: column;
   background-color: #FFFFFF;
   width: 1440px;
+  margin-bottom: 25px;
 }
 
 header {
@@ -109,7 +108,7 @@ header {
 
 .search-section__input {
   height: 63px;
-  padding: 15px;
+  padding: 15px 15px 15px 15px;
   width: 266px;
   border-style: none;
   outline: none;
@@ -121,7 +120,7 @@ header {
   letter-spacing: 0em;
   text-align: left;
   color: #29293033;
-  padding-left: 38px;
+  padding-left: 33px;
 }
 
 
@@ -145,7 +144,7 @@ header {
   line-height: 60px;
   letter-spacing: 0em;
   text-align: left;
-  margin-left: 19px;
+  margin-left: 14px;
 }
 
 
@@ -171,7 +170,7 @@ header {
   letter-spacing: 0em;
   text-align: left;
   color: #FFFFFF;
-  margin-left: 19px;
+  margin-left: 14px;
 }
 
 
@@ -216,7 +215,6 @@ header {
 
 .main {
   display: flex;
-  height: 766px;
 }
 
 .main__left {
@@ -255,6 +253,7 @@ header {
   border-radius: 10px;
   background-color: #10B981;
   border: none;
+  box-shadow: 0px 25px 50px 0px #845EC226;
 }
 
 .main__left__btn-text {
@@ -288,14 +287,32 @@ header {
   border-width: 2px;
 }
 
+.profile-1, .profile-2, .profile-3, .profile-4 {
+  position: relative;
+}
+
+.profile-1 {
+  right: 0px;
+}
+.profile-2 {
+  right: 23px;
+}
+.profile-3 {
+  right: 46px;
+}
+.profile-4 {
+  right: 69px;
+}
+
 .main__left__reviews__text {
-  position: absolute;
+  position: relative;
   font-family: Montserrat;
   font-size: 26px;
   font-weight: 500;
   line-height: 35px;
   letter-spacing: 0em;
   text-align: left;
+  right: 54px;
 }
 
 
@@ -304,7 +321,7 @@ header {
   display: flex;
   flex-direction: column; 
   margin-top: 75px;
-  margin-left: 300px;
+  margin-left: 280px;
 }
 
 .main__right__star-section-1 {
@@ -313,29 +330,34 @@ header {
 }
 
 .main__right__star-icon-1 {
-  height: 40px;
-  width: 40px;
-  transform: translateX(-20px);
+  position: relative;
+  height: 53px;
+  width: 53px;
+  right: 46px;
 }
 
 .main__right__beats-section {
   transform-origin: top;
+  width: 324px;
 }
 
 .main__right__beats-section__text {
   position: relative;
-  left: -50px;
+  right: 100px;
+  bottom: 22px;
   transform: rotate(-15deg);
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 49px;
   letter-spacing: 0em;
   text-align: left;  
+  width: 443px;
 }
 
 .main__right__beats-section__ellipse {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   background-color:#ECFEF4;
@@ -344,11 +366,11 @@ header {
   border-radius: 136px;
   margin-left: 25px;
   margin-right: 25px;
+  bottom: 10px;
 }
 
 .main__right__beats-section__ellipse__img {
-  height: 280px;
-  width: 299px;
+  pointer-events: none; 
 }
 
 .main__right__star-section-2 {
@@ -357,7 +379,169 @@ header {
 }
 
 .main__right__star-icon-2 {
-  height: 40px;
-  width: 40px;
-  transform: translateX(20px);
+  position: relative;
+  height: 53px;
+  width: 53px;
+  left: 60px;
+  bottom: 23px;
+}
+
+
+
+.second-page {
+  display: flex;
+  background-color: #845EC2;
+  height: 590px;
+  width: 1440px;
+}
+
+.feature-products {
+  display: flex;
+}
+
+.feature-products__left-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px;
+}
+
+.feature-products__left-section__title-1 {
+  position: absolute;
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 73px;
+  letter-spacing: 0em;
+  text-align: left;
+  -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+  -webkit-text-fill-color:transparent;
+  color: #845EC2;
+  margin-top: 70px;
+}
+
+.feature-products__left-section__title-2 {
+  position: absolute;
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 73px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #845EC2;
+  margin-top: 70px;
+}
+
+.feature-products__left-section__block {
+  height: 330px;
+  width: 189px;
+  background-color: #ECFEF4;
+  margin-top: 180px;
+  border-radius: 180px;
+}
+
+.first-block {
+  background-image: url('./img/feature-product-1.png');
+  background-size: cover; 
+  background-position: center; 
+}
+
+.second-block {
+  margin-top: 110px;
+  margin-left: 32px;
+  z-index: 1;
+  background-image: url('./img/feature-product-2.png');
+  background-size: cover; 
+  background-position: center; 
+}
+
+.third-block {
+  margin-left: 32px;
+  background-image: url('./img/feature-product-3.png');
+  background-size: cover; 
+  background-position: center; 
+}
+
+.feature-block-wrapper {
+  display: flex;
+}
+
+.feature-products__left-section__price {
+  font-family: Montserrat;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-products__left-section__price__currency {
+  font-family: Montserrat;
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+
+
+.feature-products__right-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 143px;
+  margin-left: 124px;
+}
+
+.feature-products__right-section__title {
+  font-family: Montserrat;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.feature-products__right-section__text {
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+
+.feature-products__right-section__btn-cart {
+  height: 70px;
+  width: 263px;
+  margin-top: 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: #10B981;
+  box-shadow: 0px 25px 50px 0px #FFFFFF1A;
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.feature-products__right-section__btn-view {
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0em;
+  border: none;
+  background-color: #00000000;
+  color: #FFFFFF;
+  padding: 0px;
+  margin-left: 49px;
 }
