@@ -393,6 +393,7 @@ header {
   background-color: #845EC2;
   height: 590px;
   width: 1440px;
+  margin-bottom: 53px;
 }
 
 .feature-products {
@@ -440,7 +441,7 @@ header {
 }
 
 .first-block {
-  background-image: url('./img/feature-product-1.png');
+  background-image: url('./img/second_page/feature-product-1.png');
   background-size: cover; 
   background-position: center; 
 }
@@ -449,14 +450,14 @@ header {
   margin-top: 110px;
   margin-left: 32px;
   z-index: 1;
-  background-image: url('./img/feature-product-2.png');
+  background-image: url('./img/second_page/feature-product-2.png');
   background-size: cover; 
   background-position: center; 
 }
 
 .third-block {
   margin-left: 32px;
-  background-image: url('./img/feature-product-3.png');
+  background-image: url('./img/second_page/feature-product-3.png');
   background-size: cover; 
   background-position: center; 
 }
@@ -544,4 +545,201 @@ header {
   color: #FFFFFF;
   padding: 0px;
   margin-left: 49px;
+}
+
+
+
+.third-page {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.top-sellers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-sellers__title {
+  font-family: Montserrat;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 54px;
+}
+
+.top-sellers__btns {
+  display: flex;
+  margin-bottom: 92px;
+}
+
+.top-sellers__btn-1 {
+  background-color: #10B981;
+  width: 177px;
+  height: 91px;
+  border-radius: 100%;
+  border: none;
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #FFFFFF;
+}
+
+.top-sellers__btn-2 {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em; 
+  border: none;
+  background-color: #00000000;
+  color: #000000;
+  padding: 0px;
+  margin-left: 54px;
+}
+
+.top-sellers-cards {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 1440px;
+}
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 361px;
+  height: 438px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.card-1-bg {
+  background-color: #ECFEF4;
+}
+.card-2-bg {
+  background-color: #C9F2FF;
+}
+.card-3-bg {
+  background-color: #E5D5FF;
+}
+
+.card__img {
+  margin-top: 15px;
+  height: 237px;
+  width: 237px;
+}
+
+.card__save {
+  display: flex;
+  position: absolute;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: #FFFFFF; 
+  top: 20px;
+  right: 20px;
+}
+
+.save-bg-1 {
+  background-color: #10B981;
+}
+.save-bg-2 {
+  background-color: #845EC2;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 319px;
+  height: 164px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  padding-left: 50px;
+}
+
+.card__name {
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  margin-bottom: 14px;
+} 
+
+.card__rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.card__reviews-text {
+  margin-left: 13px;
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  color: #888888;
+}
+
+.card__price {
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.card__btn {
+  width: 361px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #10B981;
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  border: none;
+  color: #FFFFFF;
+  box-shadow: 0px 25px 50px 0px #FFFFFF1A;
+}
+
+.slider-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 200px;
+  height: 40px;
+  left: 1380px;
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.arrow-icon {
+  height: 28px;
 }
