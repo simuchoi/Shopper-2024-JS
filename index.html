@@ -12,9 +12,7 @@
 <body>
     <div class="first-page">
         <header>
-            <p class="site-name-1">Shop</p>
-            <p class="site-name-2">per</p>
-    
+            <p class="site-name-1">Shop<span class="site-name-2">per</span></p>
             <div class="search-section">
                 <input class="search-section__input" type="text" value="Search Items">
                 <button class="search-section__btn">
@@ -89,7 +87,9 @@
                     <div class="feature-products__left-section__block second-block"></div>
                     <div class="feature-products__left-section__block third-block"></div>
                 </div>
-                <p class="feature-products__left-section__price">Price :&nbsp;&nbsp;&nbsp;<span class="feature-products__left-section__price__currency">$45 .99</span></p>
+                <p class="feature-products__left-section__price">Price :&nbsp;&nbsp;&nbsp;
+                    <span class="feature-products__left-section__price__currency">$45 .99</span>
+                </p>
             </div>
 
             <div class="feature-products__right-section">
@@ -250,6 +250,39 @@
         </div>
     </div>
 
+    <div class="fifth-page">
+        <h1 class="new-launches-title">New Launches</h1>
+        <div class="new-launches">
+            <button class="new-launches__slider-btn-left">
+                <img class="arrow-primary-icon-left" src="./svg/arrow-primary.svg" alt="arrow.png">
+            </button>
+
+            <div class="new-launches__left">
+                <div class="new-launches__left__ellipse ellipse-1"></div>
+                <div class="new-launches__left__ellipse ellipse-2"></div>
+            </div>
+    
+            <div class="new-launches__right">
+                <h1 class="new-launches__right__title">Airdrop 500 Anc</h1>
+                <p class="new-launches__right__info">Lorem ipsum is a placeholder text commonly used to <br> demonstrate the visual form of a product ... Read More</p>
+                <p class="new-launches__right__price"> Price&nbsp;:&nbsp;&nbsp;
+                   <span class="new-launches__right__price__currency">$45 .99</span> 
+                </p>
+                <div class="new-launches__right__color-btns">
+                    <button class="color-btn black-bg choosen"></button>
+                    <button class="color-btn yellow-bg"></button>
+                    <button class="color-btn blue-bg"></button>
+                </div>
+                <div class="new-launches__right__btn-section">
+                    <button class="new-launches__right__btn-cart">Add to cart</button>
+                    <button class="new-launches__right-section__btn-explore">Explore More</button>
+                </div>
+            </div>
+            <button class="new-launches__slider-btn-right">
+                <img class="arrow-primary-icon-right" src="./svg/arrow-primary.svg" alt="arrow.png">
+            </button>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
