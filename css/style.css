@@ -354,19 +354,19 @@ header {
 }
 
 .first-block {
-  background-image: url('/img/second_page/feature-product-1.png');
+  background-image: url('../img/second_page/feature-product-1.png');
 }
 
 .second-block {
   margin-top: 110px;
   margin-left: 32px;
   z-index: 1;
-  background-image: url('/img/second_page/feature-product-2.png');
+  background-image: url('../img/second_page/feature-product-2.png');
 }
 
 .third-block {
   margin-left: 32px;
-  background-image: url('/img/second_page/feature-product-3.png');
+  background-image: url('../img/second_page/feature-product-3.png');
 }
 
 .feature-block-wrapper {
@@ -664,14 +664,14 @@ header {
 }
 
 .ellipse-1 {
-  background-image: url('/img/fifth_page/ellipse-1.png');
+  background-image: url('../img/fifth_page/ellipse-1.png');
 }
 
 .ellipse-2 {
   margin-left: 45px;
   margin-top: 50px;
   background-position: -178px;
-  background-image: url('/img/fifth_page/ellipse-2.png');
+  background-image: url('../img/fifth_page/ellipse-2.png');
 }
 
 
