@@ -1,0 +1,102 @@
+.main__right__beats-section__title {
+    position: relative;
+    bottom: 0px;
+    left: -11px;
+}
+
+.letter-pos {
+    position: absolute;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.main__right__beats-section__title__letter__R {
+    top: 559.97px;
+    left: 878.91px;
+    transform: rotate(-93.19deg);
+}
+.main__right__beats-section__title__letter__e1 {
+    top: 526.09px;
+    left: 877.55px;
+    transform: rotate(-83.92deg);
+}
+.main__right__beats-section__title__letter__d {
+    top: 497.36px;
+    left: 880.8px;
+    transform: rotate(-74.94deg);
+}
+.main__right__beats-section__title__letter__B {
+    top: 455.4px;
+    left: 893.83px;
+    transform: rotate(-61.53deg);
+}
+.main__right__beats-section__title__letter__e2 {
+    top: 424.9px;
+    left: 911.02px;
+    transform: rotate(-52.08deg);
+    
+}
+.main__right__beats-section__title__letter__a1 {
+    top: 401.23px;
+    left: 929px;
+    transform: rotate(-43.57deg);
+}
+.main__right__beats-section__title__letter__t {
+    top: 383.24px;
+    left: 949.65px;
+    transform: rotate(-36.45deg);
+}
+.main__right__beats-section__title__letter__s {
+    top: 371.47px;
+    left: 965.67px;
+    transform: rotate(-30deg);
+}
+.main__right__beats-section__title__letter__M {
+    top: 353.73px;
+    left: 997.99px;
+    transform: rotate(-16.46deg);
+}
+.main__right__beats-section__title__letter__I {
+    top: 342.83px;
+    left: 1039.48px;
+    transform: rotate(-7.8deg);
+}
+.main__right__beats-section__title__letter__9 {
+    top: 340.6px;
+    left: 1053.85px;
+    transform: rotate(-1.42deg);
+}
+.main__right__beats-section__title__letter__c {
+    top: 340.2px;
+    left: 1083.63px;
+    transform: rotate(7.08deg);
+}
+.main__right__beats-section__title__letter__2 {
+    top: 343.82px;
+    left: 1110.9px;
+    transform: rotate(15.2deg);
+}
+.main__right__beats-section__title__letter__z {
+    top: 351.29px;
+    left: 1137.33px;
+    transform: rotate(22.99deg);
+}
+.main__right__beats-section__title__letter__m {
+    top: 370.29px;
+    left: 1162.34px;
+    transform: rotate(34.01deg);
+}
+.main__right__beats-section__title__letter__slash {
+    top: 389.04px;
+    left: 1200.68px;
+    transform: rotate(43.84deg);
+}
+.main__right__beats-section__title__letter__a2 {
+    top: 403.33px;
+    left: 1208.68px;
+    transform: rotate(50.59deg);
+}
