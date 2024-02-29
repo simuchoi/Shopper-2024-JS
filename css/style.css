@@ -1,5 +1,6 @@
 @import url("./buttons.css");
-@import url('./min-css-reset.css');
+@import url("./min-css-reset.css");
+@import url("./product-title.css");
 
 :root {
   --primary: #10B981;
@@ -35,7 +36,7 @@ body {
   flex-direction: column;
   background-color: #FFFFFF;
   width: 1440px;
-  margin-bottom: 25px;
+  margin-bottom: 54px;
 }
 
 header {
@@ -231,7 +232,7 @@ header {
 .main__right {
   display: flex;
   flex-direction: column;
-  margin-top: 75px;
+  margin-top: 120px;
   margin-left: 280px;
 }
 
@@ -244,7 +245,8 @@ header {
   position: relative;
   height: 53px;
   width: 53px;
-  right: 46px;
+  right: 52px;
+  bottom: 26px;
 }
 
 .main__right__beats-section {
@@ -282,6 +284,7 @@ header {
 
 .main__right__beats-section__ellipse__img {
   pointer-events: none;
+  transform: scale(1.1);
 }
 
 .main__right__star-section-2 {
