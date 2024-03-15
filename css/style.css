@@ -277,9 +277,6 @@ header {
   width: 272px;
   height: 477px;
   border-radius: 136px;
-  margin-left: 25px;
-  margin-right: 25px;
-  bottom: 10px;
 }
 
 .main__right__beats-section__ellipse__img {
@@ -296,7 +293,6 @@ header {
   position: relative;
   height: 53px;
   width: 53px;
-  left: 60px;
   bottom: 23px;
 }
 
