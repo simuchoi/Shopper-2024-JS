@@ -1,102 +1,102 @@
-.main__right__beats-section__title {
-    position: relative;
-    bottom: 0px;
-    left: -11px;
-}
 
-.letter-pos {
+.title-beats{
+    display: flex;
     position: absolute;
+}
+.letter{
+    position: relative;
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 600;
-    line-height: 49px;
-    letter-spacing: 0em;
-    text-align: left;
+    color: #000000;
 }
+.title__beats__R {
+    right: 50px;
+    top: 180px;
+    transform:rotate(-93deg);
+}
+.title__beats__e1 {
+    right: 78px;
+    top: 150px;
+    transform: rotate(-84deg);
+}
+.title__beats__d {
+    right: 99px;
+    top: 122px;
+    transform: rotate(-69deg);
 
-.main__right__beats-section__title__letter__R {
-    top: 559.97px;
-    left: 878.91px;
-    transform: rotate(-93.19deg);
 }
-.main__right__beats-section__title__letter__e1 {
-    top: 526.09px;
-    left: 877.55px;
-    transform: rotate(-83.92deg);
+.title__beats__B {
+    right: 114px;
+    top: 92px;
+    transform: rotate(-62deg);
+
 }
-.main__right__beats-section__title__letter__d {
-    top: 497.36px;
-    left: 880.8px;
-    transform: rotate(-74.94deg);
+.title__beats__e2 {
+    right: 125px;
+    top: 69px;
+    transform: rotate(-52deg);
+
 }
-.main__right__beats-section__title__letter__B {
-    top: 455.4px;
-    left: 893.83px;
-    transform: rotate(-61.53deg);
+.title__beats__a1 {
+    right: 133px;
+    top: 50px;
+    transform: rotate(-43deg);	
+
 }
-.main__right__beats-section__title__letter__e2 {
-    top: 424.9px;
-    left: 911.02px;
-    transform: rotate(-52.08deg);
-    
-}
-.main__right__beats-section__title__letter__a1 {
-    top: 401.23px;
-    left: 929px;
-    transform: rotate(-43.57deg);
-}
-.main__right__beats-section__title__letter__t {
-    top: 383.24px;
-    left: 949.65px;
+.title__beats__t {
+    right: 134px;
+    top: 34px;
     transform: rotate(-36.45deg);
+
 }
-.main__right__beats-section__title__letter__s {
-    top: 371.47px;
-    left: 965.67px;
+.title__beats__s {
+    right: 135px;
+    top: 22px;
     transform: rotate(-30deg);
 }
-.main__right__beats-section__title__letter__M {
-    top: 353.73px;
-    left: 997.99px;
-    transform: rotate(-16.46deg);
+.title__beats__M {
+    right: 126px;
+    top: 6px;
+    transform: rotate(-16.5deg);
 }
-.main__right__beats-section__title__letter__I {
-    top: 342.83px;
-    left: 1039.48px;
+.title__beats__I {
+    right: 127px;
+    top: 0px;
     transform: rotate(-7.8deg);
 }
-.main__right__beats-section__title__letter__9 {
-    top: 340.6px;
-    left: 1053.85px;
+.title__beats__9 {
+    right: 126px;
+    top: -2px;
     transform: rotate(-1.42deg);
 }
-.main__right__beats-section__title__letter__c {
-    top: 340.2px;
-    left: 1083.63px;
-    transform: rotate(7.08deg);
+.title__beats__c {
+    right: 126px;
+    top: -1px;
+    transform: rotate(10deg);
 }
-.main__right__beats-section__title__letter__2 {
-    top: 343.82px;
-    left: 1110.9px;
-    transform: rotate(15.2deg);
+.title__beats__2 {
+    right: 125px;
+    top: 4px;
+    transform: rotate(15deg);
 }
-.main__right__beats-section__title__letter__z {
-    top: 351.29px;
-    left: 1137.33px;
-    transform: rotate(22.99deg);
+.title__beats__z {
+    right: 120px;
+    top: 13px;
+    transform: rotate(26deg);
 }
-.main__right__beats-section__title__letter__m {
-    top: 370.29px;
-    left: 1162.34px;
-    transform: rotate(34.01deg);
+.title__beats__m {
+    right: 121px;
+    top: 31px;
+    transform: rotate(38deg);
 }
-.main__right__beats-section__title__letter__slash {
-    top: 389.04px;
-    left: 1200.68px;
-    transform: rotate(43.84deg);
+.title__beats__slash {
+    right: 121px;
+    top: 50px;
+    transform: rotate(48deg);
 }
-.main__right__beats-section__title__letter__a2 {
-    top: 403.33px;
-    left: 1208.68px;
-    transform: rotate(50.59deg);
+.title__beats__a2 {
+    right: 132px;
+    top: 69px;
+    transform: rotate(53deg);
 }
