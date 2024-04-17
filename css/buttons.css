@@ -90,7 +90,7 @@
   background-color: var(--primary);
 }
 
-.navbar__item__link {
+.menu-link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -104,13 +104,21 @@
   transition: all 0.3s ease;
 }
 
-.navbar__item__link:hover {
+.menu-link:hover {
   color: #ffffff99;
 }
 
-.navbar__item__link:active {
+.menu-link:active {
   transition: all 0.1s ease;
   color: #ffffff;
+}
+
+.menu-btn:hover {
+  background-color: #00000070;
+}
+
+.menu-btn:active {
+  
 }
 
 .main__left__btn {
@@ -148,7 +156,6 @@
 .feature-products__right-section__btn-cart {
   height: 70px;
   width: 263px;
-  margin-top: 35px;
   border-radius: 10px;
   border: none;
   background-color: var(--primary);
@@ -205,48 +212,29 @@
   color: #ffffff;
 }
 
-.top-sellers__active-btn {
-  background-color: var(--primary);
-  width: 177px;
-  height: 91px;
-  border-radius: 100%;
-  border: none;
-  font-family: Montserrat;
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 32px;
-  letter-spacing: 0em;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.top-sellers__active-btn:hover {
-}
-
-.top-sellers__active-btn:active {
-}
-
-.top-sellers__unactive-btn {
+.top-sellers__btn {
   background-color: #00000000;
   width: 177px;
   height: 91px;
-  border-radius: 100%;
   border: none;
   font-family: Montserrat;
   font-size: 26px;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0em;
-  color: #000000;
-  transition: all 0.3s ease;
+  color: #000;
   cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
 }
 
-.top-sellers__unactive-btn:hover {
+.top-sellers__btn:hover {
   background-color: #00000015;
 }
 
-.top-sellers__unactive-btn:active {
+.top-sellers__btn.active {
+  background-color: var(--primary);
+  color: #fff;
 }
 
 .card__btn {
@@ -300,42 +288,29 @@
   background-color: #00000009;
 }
 
-.trending-earphones__active-btn {
-  background-color: var(--primary);
+.trending-earphones__btn {
+  background-color: #00000000;
   width: 177px;
   height: 91px;
-  border-radius: 100%;
   border: none;
   font-family: Montserrat;
   font-size: 26px;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0em;
-  color: #ffffff;
+  color: #000;
   cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
 }
 
-.trending-earphones__unactive-btn {
-  width: 177px;
-  height: 91px;
-  border-radius: 100%;
-  border: none;
-  font-family: Montserrat;
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 32px;
-  letter-spacing: 0em;
-  color: #000000;
-  background-color: #ffffff;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.trending-earphones__unactive-btn:hover {
+.trending-earphones__btn:hover {
   background-color: #00000015;
 }
 
-.trending-earphones__unactive-btn:active {
+.trending-earphones__btn.active {
+  background-color: var(--primary);
+  color: #fff;
 }
 
 .trending-earphones__slider-btn {

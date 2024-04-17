@@ -1,0 +1,384 @@
+@import url("./min-css-reset.css");
+
+@media (max-width: 768px) {
+  .first-page {
+    width: 768px;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .site-name-1 {
+    margin: 0px;
+    margin: 0px 0px 0px 50px;
+  }
+
+  .search-section {
+    margin: 0px;
+    background-color: #fff;
+    margin: 45px 0px 20px 0px;
+  }
+
+  .first-page .cart-btn, .login-btn, header>.search-section {
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px 0px 50px 0px;
+  }
+
+
+
+  .mobile-menu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50vh;
+    width: 768px;
+    background-color: var(--primary-bg);
+    z-index: 10;
+    transition: all 1s ease-out;
+  }
+
+  .mobile-menu__close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    right: 52px;
+    border: none;
+    background: none;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #00000020;
+  }
+
+  .menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background: #00000020;
+    margin: 0px 42px 0px 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .link {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .link a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 36px;
+    font-family: Montserrat;
+    font-weight: 600;
+    width: 322px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .link a:hover {
+    background-color: #00000020;
+    color: #000;
+  }
+
+  .mobile-menu__close-X {
+    cursor: pointer;
+  }
+
+  .hidden {
+    transform: translateX(100%);
+  }
+
+  .visible {
+    transform: translateX(0%);
+  }
+
+  .first-page .navbar {
+    display: none;
+  }
+
+
+
+  .navbar {
+    margin: 0px;
+    width: 768px;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+
+  .navbar__list {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    width: 768px;
+  }
+
+  .main__left {
+    align-items: center;
+    width: 631px;
+    margin: 0px;
+  }
+
+  .main__left__title {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .main__left__info {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .main__left__btn {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    top: 700px;
+  }
+
+  .main__left__wrapper-reviews {
+    position: relative;
+    margin: 0px;
+    top: 550px;
+  }
+
+  .main__right {
+    position: relative;
+    width: unset;
+    margin: 0px;
+    bottom: 100px;
+    left: 22px;
+  }
+
+
+
+  .second-page {
+    width: 768px;
+    margin-bottom: 40px;
+    height: 100%;
+  }
+
+  .feature-products {
+    flex-direction: column;
+    height: 840px;
+  }
+
+  .feature-block-wrapper {
+    position: relative;
+    top: 150px;
+  }
+
+  .feature-products__left-section {
+    align-items: center;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .feature-products__left-section__title-1 {
+    margin-top: 20px;
+    font-size: 50px;
+  }
+
+  .feature-products__left-section__title-2 {
+    margin-top: 20px;
+    font-size: 50px;
+  }
+
+  .feature-products__left-section__price {
+    position: relative;
+    top: 100px;
+  }
+
+  .feature-products__right-section {
+    position: relative;
+    bottom: 470px;
+    margin: 0px;
+  }
+
+  .feature-products__right-section__btn-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 390px;
+    gap: 20px;
+  }
+
+  .feature-products__right-section__btn-cart {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .feature-products__right-section__btn-view {
+    margin: 0px;
+  }
+
+  .cards {
+    flex-direction: column;
+    width: 768px;
+    gap: 50px;
+  }
+
+  .card {
+    margin-bottom: 0px;
+  }
+
+  .top-sellers__title {
+    margin-bottom: 40px;
+  }
+
+  .top-sellers__btns {
+    margin-bottom: 40px;
+  }
+
+
+
+  .third-page {
+    margin-bottom: 40px;
+    width: 768px;
+  }
+
+  .trending-earphones__title {
+    margin-bottom: 40px;
+  }
+
+  .trending-earphones__btns {
+    margin-bottom: 40px;
+  }
+
+  .top-sellers__slider-btn {
+    top: 820px;
+    left: 640px;
+  }
+
+  .trending-earphones__slider-btn {
+    top: 820px;
+    left: 640px;
+  }
+
+
+
+  .fourth-page {
+    margin-bottom: 40px;
+    width: 768px;
+  }
+
+
+
+  .fifth-page {
+    width: 768px;
+    margin-bottom: 40px;
+  }
+
+  .new-launches-title {
+    margin-bottom: 40px;
+  }
+
+  .new-launches {
+    flex-direction: column;
+    align-items: center;
+    width: 768px;
+    height: 100%;
+  }
+
+  .new-launches__slider-btn-left {
+    left: 40px;
+  }
+
+  .new-launches__slider-btn-right {
+    left: 680px;
+  }
+
+  .new-launches__right {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .new-launches__right__title {
+    margin-bottom: 20px;
+  }
+
+  .new-launches__right__info {
+    margin-bottom: 20px;
+  }
+
+  .new-launches__right__price {
+    margin-bottom: 20px;
+  }
+
+  .new-launches__right__color-btns {
+    margin-bottom: 20px;
+  }
+
+  .new-launches__right__btn-section {
+    margin-bottom: 40px;
+  }
+
+  footer {
+    width: 768px;
+    height: 430px;
+  }
+
+  .footer__top {
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+
+  .divider {
+    width: 688px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+  }
+
+  .footer__mid {
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer__mid-right {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 0px;
+    gap: 0px;
+    width: 100%;
+  }
+
+  .footer__bottom {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
