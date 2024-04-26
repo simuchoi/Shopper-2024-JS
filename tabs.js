@@ -1,65 +1,104 @@
 const sellers = document.querySelector('.top-sellers').querySelector('.cards')
 const earphones = document.querySelector('.trending-earphones').querySelector('.cards')
 
-const sellersBtns =  document.querySelector('.top-sellers').querySelector('.top-sellers__btns')
-const earphonesBtns =  document.querySelector('.trending-earphones').querySelector('.trending-earphones__btns')
+const sellersOvalBtns =  document.querySelector('.top-sellers').querySelector('.top-sellers__btns')
+const earphonesOvalBtns =  document.querySelector('.trending-earphones').querySelector('.trending-earphones__btns')
 
-sellersBtns.addEventListener('click', (event) => {
+sellersOvalBtns.addEventListener('click', (event) => {
     const target = event.target
-    const ovalButtons = sellersBtns.querySelectorAll('button')
+    const ovalButtons = sellersOvalBtns.querySelectorAll('button')
     ovalButtons.forEach(btn => {
         btn.classList.remove('active')
     })
     target.classList.add('active')
-    getCards(cardEarphonesList, sellers)
+    if (target.innerText == 'Top Picks') {
+        getCards(cardSellersList, sellers, true)
+    } else {
+        getCards(cardEarphonesList, sellers, false)
+    }
 })
 
-earphonesBtns.addEventListener('click', (event) => {
+earphonesOvalBtns.addEventListener('click', (event) => {
     const target = event.target
-    const ovalButtons = earphonesBtns.querySelectorAll('button')
+    const ovalButtons = earphonesOvalBtns.querySelectorAll('button')
     ovalButtons.forEach(btn => {
         btn.classList.remove('active')
     })
     target.classList.add('active')
+    if (target.innerText == 'Earbuds') {
+        getCards(cardEarphonesList, earphones, true)
+    } 
+    
+    if (target.innerText == 'Wireless') {
+        getCards(cardEarphonesList, earphones, true)
+    } 
+    
+    if (target.innerText == 'Wired') {
+        getCards(cardEarphonesList, earphones, true)
+    }
 })
 
 
 const cardSellersList = [{
-    cardTitle: 'Беспроводные наушники #1',
-    cardReviews: 50,
-    cardPrice: 30,
+    cardTitle: 'Boat Rockerz 333',
+    cardReviews: 75,
+    cardPrice: 20,
+    background: 'card-1-bg',
+    img: './img/third_page/Boat Rockerz 333.png',
+    specOffer: 'save-bg-1',
+    saveValue: '60' 
 },{
-    cardTitle: 'Беспроводные наушники #2',
+    cardTitle: 'Boat kerz 234',
     cardReviews: 75,
     cardPrice: 40,
+    background: 'card-2-bg',
+    img: './img/third_page/Boat kerz 234.png',
+    specOffer: 'save-bg-none',
+    saveValue: '0' 
 },{
-    cardTitle: 'Беспроводные наушники #3',
-    cardReviews: 100,
-    cardPrice: 50,
+    cardTitle: 'Boat Rockerz 323',
+    cardReviews: 75,
+    cardPrice: 30,
+    background: 'card-3-bg',
+    img: './img/third_page/Boat Rockerz 323.png',
+    specOffer: 'save-bg-2',
+    saveValue: '40' 
 }]
 
 
 const cardEarphonesList = [{
     cardTitle: 'Беспроводные наушники #4',
-    cardReviews: 50,
-    cardPrice: 30,
+    cardReviews: 25,
+    cardPrice: 20,
+    background: 'card-2-bg',
+    img: './img/third_page/Boat kerz 234.png',
+    specOffer: 'save-bg-2',
+    saveValue: '80'
 },{
     cardTitle: 'Беспроводные наушники #5',
-    cardReviews: 75,
-    cardPrice: 40,
+    cardReviews: 50,
+    cardPrice: 30,
+    background: 'card-1-bg',
+    img: './img/third_page/Boat Rockerz 323.png',
+    specOffer: 'save-bg-none' 
 },{
     cardTitle: 'Беспроводные наушники #6',
-    cardReviews: 100,
-    cardPrice: 50,
+    cardReviews: 75,
+    cardPrice: 40,
+    background: 'card-3-bg',
+    img: './img/third_page/Boat Rockerz 333.png',
+    specOffer: 'save-bg-1',
+    saveValue: '40'
 }]
 
 
 function getCards(cardInfoList, elem) {
-    const arr = cardInfoList.forEach(cardInfo => {
-    const card = `<div class="card">
-                    <div class="card__section card-1-bg">
-                        <div class="card__save save-bg-1">Save<br>60%</div>
-                        <img class="card__img" src="./img/third_page/Boat Rockerz 333.png" alt="Boat Rockerz 323.png">
+    elem.innerHTML = ''
+    const arr = cardInfoList.map(cardInfo => {
+        const tab = `<div class="card">
+                    <div class="card__section ${cardInfo.background}">
+                        <div class="card__save ${cardInfo.specOffer}">Save<br>${cardInfo.saveValue}%</div>
+                        <img class="card__img" src="${cardInfo.img}" alt="Boat Rockerz 323.png">
                         <div class="card__info">
                             <p class="card__name">${cardInfo.cardTitle}</p>
                             <div class="card__rating">
@@ -75,12 +114,11 @@ function getCards(cardInfoList, elem) {
                     </div>
                     <button class="card__btn">Add to cart</button>
                 </div> `        
-            elem.insertAdjacentHTML('beforeend', card)
+            return tab
     })
+    elem.insertAdjacentHTML('beforeend', arr.join(''))
 }
 
-getCards(cardSellersList, sellers)
-getCards(cardEarphonesList, earphones)
 
 
 
