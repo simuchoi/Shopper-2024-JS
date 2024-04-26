@@ -14,34 +14,6 @@
     z-index: 10;
 }
 
-.mobile-menu__close {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 50px;
-    right: 50px;
-    border: none;
-    background: none;
-    height: 50px;
-    width: 50px;
-    font-size: 25px;
-    cursor: pointer;
-    text-align: center;
-    background-color: #00000020;
-}
-
-.menu-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-    border: none;
-    background: #00000020;
-    margin: 0px 42px 0px 0px;
-}
-
 .mobile-menu__links {
     display: flex;
     flex-direction: column;
@@ -67,10 +39,6 @@
 
 .mobile-menu__links-link a:hover {
     background-color: #00000020;
-}
-
-.mobile-menu__close-X {
-    cursor: pointer;
 }
 
 .hidden {

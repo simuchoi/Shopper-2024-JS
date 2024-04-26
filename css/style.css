@@ -1,6 +1,7 @@
 @import url("./buttons.css");
 @import url("./min-css-reset.css");
 @import url("./product-title.css");
+@import url("./popup.css");
 
 :root {
   --primary: #10B981;
@@ -9,7 +10,6 @@
   --textprimarycolor: #2b2626;
   --primary-products: #845ec2;
 }
-
 
 
 
@@ -29,6 +29,7 @@ body {
 .mobile-menu {
   display: none;
 }
+
 
 
 .first-page {
@@ -539,6 +540,10 @@ header {
   color: #FFFFFF;
   top: 20px;
   right: 20px;
+}
+
+.save-bg-none {
+  display: none;
 }
 
 .save-bg-1 {

@@ -17,6 +17,26 @@
   background-color: var(--primary);
 }
 
+
+
+.mobile-menu__close:hover {
+  background-color: #00000070;
+}
+
+.mobile-menu__close:active {
+  transition: all 0.1s ease;
+  background-color: #00000020;
+}
+
+.menu-btn:hover {
+  background-color: #00000070;
+}
+
+.menu-btn:active {
+  transition: all 0.1s ease;
+  background-color: #00000020;
+}
+
 .cart-btn {
   display: flex;
   align-items: center;
@@ -111,14 +131,6 @@
 .menu-link:active {
   transition: all 0.1s ease;
   color: #ffffff;
-}
-
-.menu-btn:hover {
-  background-color: #00000070;
-}
-
-.menu-btn:active {
-  
 }
 
 .main__left__btn {
